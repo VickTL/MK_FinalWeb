@@ -205,3 +205,26 @@ nav #contactUs {
     border: solid 1px #7D6CCA;
 }
 
+/*Parte Miguel*/
+
+/*Asperoides*/
+
+.seccionEstandar {
+
+    width: auto;
+    height: 768px;
+
+}
+
+.seccionEstandar h3{
+    margin-left: 835px;
+    margin-top: 189px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+
+    color: #333333;
+}
