@@ -161,6 +161,10 @@ section {
 header {
     padding-left: 136px;
     padding-right: 136px;
+
+    background: linear-gradient(to top right, #C56CD6, #3626AF);
+
+    height: 500px;
 }
 
 /* Cosa por cosa */
