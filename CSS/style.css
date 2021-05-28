@@ -80,6 +80,8 @@ h3 {
     font-size: 16px;
     line-height: 24px;
     text-transform: uppercase;
+
+    margin-bottom: 23px;
 }
 
 h4 {
@@ -88,6 +90,8 @@ h4 {
     font-weight: bold;
     font-size: 24px;
     line-height: 32px;
+
+
 }
 
 h5 {
@@ -100,6 +104,8 @@ h5 {
 
 p {
     font-family: 'Source Sans Pro', sans-serif;
+
+    margin: 34px 0px 34px 0px;
 }
 
 li {
@@ -205,6 +211,8 @@ nav #contactUs {
 
     border: solid 1px #7D6CCA;
 }
+
+
 /*Parte Miguel*/
 
 /*Asperoides*/
