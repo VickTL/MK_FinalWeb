@@ -57,9 +57,6 @@ table {
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
 
 
-
-/* jUAN HOLA*/
-
 h1 {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
@@ -163,8 +160,6 @@ header {
     padding-right: 136px;
 
     background: linear-gradient(to top right, #C56CD6, #3626AF);
-
-    height: 500px;
 }
 
 /* Cosa por cosa */
@@ -207,6 +202,16 @@ nav #contactUs {
     background-color: unset;
 
     border: solid 1px #7D6CCA;
+}
+
+.contenidoPortada {
+    height: 300px;
+    width: 570px;
+
+    align-content: center;
+
+    margin-top: 152px;
+    margin-bottom: 192px;
 }
 
 /*Parte Miguel*/
