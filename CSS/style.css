@@ -133,6 +133,7 @@ input {
 
     color: white;
     text-decoration: none;
+    font-weight: bold;
 
     border-style: none;
 }
@@ -166,9 +167,9 @@ header {
     padding-right: 136px;
 
     background: linear-gradient(to top right, #C56CD6, #3626AF);
-
-    height: 500px;
+    height: fit-content;
 }
+
 
 /* Cosa por cosa */
 
@@ -210,6 +211,17 @@ nav #contactUs {
     background-color: unset;
 
     border: solid 1px #7D6CCA;
+}
+
+.contenidoPortada {
+    width: 570px;
+
+    margin-top: 152px;
+    padding-bottom: 192px;
+}
+
+#explore {
+    background-color: #FFC300;
 }
 
 
