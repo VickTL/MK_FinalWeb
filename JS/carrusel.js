@@ -1,5 +1,46 @@
 
-document.addEventListener("DOMContentLoaded", init );
+document.addEventListener("DOMContentLoaded",init );
+
+function init() {
+
+  var butAnterior = document.getElementByClassName('botonA');
+  var butSiguiente = document.getElementByClassName('botonAt');
+
+  butSiguiente.addEventListener("onclick", adelante)
+  butAnterior.addEventListener("onclick",atras)
+}
+
+function adelante(ev){
+  ev.preventDefault();
+  if ( avances < maxAvances ){
+
+      avances++;
+      var carrusel = document.querySelector('.carrusel');
+      carrusel.style.marginLeft = '(salto*avances)*-1+'px'';
+
+  }
+
+}
+
+fuction atras(evt){
+
+    evt.preventDefault();
+
+
+if (avances > 0){
+  avances--;
+  var carrusel = document.querySelector('.carrusel');
+  carrusel.style.marginLeft = '(salto*avances)*-1+'px'';
+
+}
+
+
+
+
+
+
+
+/*document.addEventListener("DOMContentLoaded", init );
 
 function init() {
 
@@ -53,7 +94,4 @@ if (avances > 0){
 
 }
 
-
-
-
-}
+}*/
