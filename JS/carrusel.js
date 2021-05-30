@@ -41,7 +41,7 @@ function adelante(evt){
 
 }
 
-fuction atras(evt){
+function atras(evt){
 
     evt.preventDefault();
 
