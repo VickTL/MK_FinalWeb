@@ -3,11 +3,11 @@ document.addEventListener("DOMContentLoaded",init );
 
 function init() {
 
-  var butAnterior = document.getElementByClassName('botonA');
-  var butSiguiente = document.getElementByClassName('botonAt');
+  var butAnterior = document.getElementByClassName('.botonA');
+  var butSiguiente = document.getElementByClassName('.botonAt');
 
-  butSiguiente.addEventListener("onclick", adelante)
-  butAnterior.addEventListener("onclick",atras)
+  butSiguiente.addEventListener("click", adelante)
+  butAnterior.addEventListener("click",atras)
 }
 
 function adelante(ev){
