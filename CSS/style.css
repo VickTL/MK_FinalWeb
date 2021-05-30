@@ -784,10 +784,20 @@ mix-blend-mode: normal;
 	padding-bottom: 64px;
 	background: white;
 	z-index: 1;
+
+
+}
+.carrusel{
+	width: 1198px;
+
+	overflow: hidden;
+
+	transition: all 500ms ease;
+
 }
 
 .vagon {
-	box-shadow: 16px 16px 48px rgba(0, 0, 0, 0.0994678);
+	box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.0994678);
 
 
 	width: 570px;
@@ -798,6 +808,8 @@ mix-blend-mode: normal;
 	margin-right: 30px;
 
 	position: relative;
+
+
 }
 
 .vagonesCarrusel {
