@@ -1,6 +1,6 @@
 
 var boton = document.getElementById('send');
-boton.addEventListener('click', enviar);
+boton.addEventListener('click', enviar(event));
 
 function enviar(ev) {
   ev.preventDefault();
