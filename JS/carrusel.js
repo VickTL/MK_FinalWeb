@@ -1,5 +1,46 @@
 
-document.addEventListener("DOMContentLoaded", init );
+document.addEventListener("DOMContentLoaded",init );
+
+function init() {
+
+  var butAnterior = document.getElementByClasName('.botonA');
+  var butSiguiente = document.getElementByClasName('.botonAt');
+
+  butSiguiente.addEventListener("click", adelante)
+  butAnterior.addEventListener("click",atras)
+}
+
+function adelante(ev){
+  ev.preventDefault();
+  if ( avances < maxAvances ){
+
+      avances++;
+      var carrusel = document.querySelector('.carrusel');
+      carrusel.style.marginLeft = '(salto*avances)*-1+'px'';
+
+  }
+
+}
+
+fuction atras(evt){
+
+    evt.preventDefault();
+
+
+if (avances > 0){
+  avances--;
+  var carrusel = document.querySelector('.carrusel');
+  carrusel.style.marginLeft = '(salto*avances)*-1+'px'';
+
+}
+
+
+
+
+
+
+
+/*document.addEventListener("DOMContentLoaded", init );
 
 function init() {
 
@@ -41,7 +82,7 @@ function adelante(evt){
 
 }
 
-fuction atras(evt){
+function atras(evt){
 
     evt.preventDefault();
 
@@ -53,7 +94,4 @@ if (avances > 0){
 
 }
 
-
-
-
-}
+}*/
