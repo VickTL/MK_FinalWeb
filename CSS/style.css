@@ -784,21 +784,17 @@ mix-blend-mode: normal;
 	padding-bottom: 64px;
 	background: white;
 	z-index: 1;
-
-
 }
+
 .carrusel{
-	width: 1198px;
-
+	width: 1200px;
 	overflow: hidden;
-
-	transition: all 500ms ease;
 
 }
 
 .vagon {
-	box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.0994678);
 
+	box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.0994678);
 
 	width: 570px;
 	height: 384px;
@@ -820,6 +816,12 @@ mix-blend-mode: normal;
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
+
+	overflow-x: hidden;
+
+
+	transition: all 500ms ease;
+
 }
 
 .vagonTitulo {
@@ -837,6 +839,10 @@ mix-blend-mode: normal;
 .vagon p {
 	margin-left: 32px;
 	width: 506px;
+}
+
+.vagon b {
+	margin-left: -32px;
 }
 
 .botonCircular {

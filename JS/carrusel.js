@@ -1,40 +1,43 @@
 
-document.addEventListener("DOMContentLoaded",init );
+var salto = 600;
+var avances = 0;
+var items;
+var maxAvances;
+var itemsVisibles = 2;
+
+document.addEventListener("DOMContentLoaded", init);
 
 function init() {
+    items = document.getElementsByClassName('vagon');
+    maxAvances = items.length - itemsVisibles;
 
-  var butAnterior = document.getElementByClasName('.botonA');
-  var butSiguiente = document.getElementByClasName('.botonAt');
+    var butAnterior = document.getElementById('atrasCarrusel');
+    var butSiguiente = document.getElementById('adelanteCarrusel');
 
-  butSiguiente.addEventListener("click", adelante)
-  butAnterior.addEventListener("click",atras)
+    butSiguiente.addEventListener("click", adelante);
+    butAnterior.addEventListener("click", atras);
 }
 
-function adelante(ev){
+function adelante(ev) {
   ev.preventDefault();
+
   if ( avances < maxAvances ){
-
       avances++;
-      var carrusel = document.querySelector('.carrusel');
-      carrusel.style.marginLeft = '(salto*avances)*-1+'px'';
-
+      var carrusel = document.querySelector('.vagonesCarrusel');
+      carrusel.style.marginLeft = (salto*avances)*-1+'px';
   }
-
 }
 
-fuction atras(evt){
+function atras(ev) {
 
-    evt.preventDefault();
+    ev.preventDefault();
 
-
-if (avances > 0){
-  avances--;
-  var carrusel = document.querySelector('.carrusel');
-  carrusel.style.marginLeft = '(salto*avances)*-1+'px'';
-
+    if (avances > 0){
+      avances--;
+      var carrusel = document.querySelector('.vagonesCarrusel');
+      carrusel.style.marginLeft = (salto*avances)*-1+'px';
+    }
 }
-
-
 
 
 
